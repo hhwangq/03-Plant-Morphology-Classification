@@ -106,3 +106,19 @@ between leaves and stems and between whole-plant images and leaves.
 
 These errors suggest that morphological similarity and background
 content can influence model predictions.
+
+## Limitations & Future Work
+
+The experiments were limited to an input resolution of 224 × 224
+pixels due to computational constraints. Higher-resolution images
+could preserve fine morphological details that may be lost during
+resizing.
+
+Potential future work includes:
+
+- Evaluating higher-resolution image inputs.
+- Further fine-tuning of transfer-learning architectures.
+- Expanding underrepresented morphology classes.
+- Investigating class-specific augmentation strategies.
+- Improving image collection to reduce background noise and
+  morphological overlap.
