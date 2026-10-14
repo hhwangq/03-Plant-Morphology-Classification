@@ -69,6 +69,11 @@ learning and fine-tuning.
 
 ## Results
 
+![Training curves and confusion matrix](figures/model_training_and_confusion_matrix.png)
+
+**Figure 1.** Model training and validation performance: (a) ResNet50,
+(b) VGG19, (c) CNN architectures, and (d) ResNet50 confusion matrix.
+
 | Model | Test Accuracy | Precision | Recall | F1-score |
 |---|---:|---:|---:|---:|
 | Simple CNN | 60.71% | 0.6725 | 0.6071 | 0.5692 |
@@ -106,6 +111,21 @@ between leaves and stems and between whole-plant images and leaves.
 
 These errors suggest that morphological similarity and background
 content can influence model predictions.
+
+## Error Analysis
+
+![Examples of correct and incorrect ResNet50 predictions](figures/prediction_examples.png)
+
+**Figure 2.** Examples of successful and unsuccessful ResNet50 predictions.
+The top row shows correctly classified flower images, while the bottom
+row illustrates misclassifications as leaf and fruit.
+
+Qualitative inspection showed that classification errors often occurred
+when other plant structures were visually prominent within an image.
+For example, flower images containing substantial foliage could be
+classified as leaves, highlighting the challenge posed by overlapping
+morphological features and background information.
+
 
 ## Limitations & Future Work
 
